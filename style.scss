@@ -1,0 +1,24 @@
+@import 
+    './styles/normalize',
+    './styles/fonts',
+    './styles/mixins',
+    './styles/variables',
+    './styles/utils',
+    './styles/globals';
+
+    @import
+        '././styles/blocks/grid',
+        '././styles/blocks/input',
+        '././styles/blocks/checkbox',
+        '././styles/blocks/header',
+        '././styles/blocks/desing-space',
+        '././styles/blocks/room',
+        '././styles/blocks/brands',
+        '././styles/blocks/padination',
+        '././styles/blocks/workspace',
+        '././styles/blocks/working-environment',
+        '././styles/blocks/rewiews',
+        '././styles/blocks/humane-approach',
+        '././styles/blocks/office',
+        '././styles/blocks/trial-version',
+        '././styles/blocks/footer';

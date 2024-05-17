@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalabel=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Room</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="header container">
+        <div class="header__contact">
+            <ul class="header__contact-list">
+                <li class="header__contact-item">
+                    <p>Contact Sales</p>
+                </li>
+                <li class="header__contact-item">
+                    <p>TEL <a href="tel:6467913726">646-791-3726</a></p>
+                </li>
+                <li class="header__contact-item">
+                    <p class="header__contact-country">us</p>
+                </li>
+            </ul>
+        </div>
+        <div class="header__inner">
+            <a href="/" class="header__inner__logo logo">
+                <img src="./images/logo.jpg" alt="Room" class="logo__image" loading="lazy" width="50" height="50" />
+            </a>
+            <nav class="header__inner__menu">
+                <ul class="header__inner__menu-list">
+                    <li class="header__inner__menu-item">
+                        <a href="/" class="header__inner__menu-link">Products</a>
+                    </li>
+                    <li class="header__inner__menu-item">
+                        <a href="/" class="header__inner__menu-link">Explore</a>
+                    </li>
+                    <li class="header__inner__menu-item">
+                        <a href="/" class="header__inner__menu-link">Shop</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__inner__link">
+                <a href="/" class="header__inner__link-geo">
+                    <span class="header__inner__link-geo-icon">
+                        <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_0_192)">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0.989563 9.1163C0.989563 4.0848 5.06298 0 10.0805 0C15.098 0 19.1714 4.0848 19.1714 9.1163C19.1714 12.7874 16.558 16.0916 14.3721 18.8531L10.5032 23.7875C10.2563 24.0381 9.9017 24.0993 9.66314 23.7941C9.24991 23.2667 8.83491 22.7227 8.41726 22.1752C7.55262 21.0419 6.67664 19.8936 5.78164 18.8465L5.78111 18.8459C3.59832 16.0844 0.989563 12.7841 0.989563 9.1163ZM18.1083 9.1163C18.1083 4.66637 14.518 1.06602 10.0805 1.06602C5.64293 1.06602 2.05261 4.66637 2.05261 9.1163C2.05261 12.4164 4.5344 15.5565 6.6107 18.1836L6.61151 18.1846C7.34004 19.1646 8.1177 20.1381 8.89153 21.1069C9.2913 21.6073 9.69005 22.1065 10.0805 22.6046L13.5435 18.1924L13.5451 18.1904C15.623 15.5623 18.1083 12.419 18.1083 9.1163Z"
+                                    fill="black" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.18427 8.88907C6.18427 6.43807 8.12564 4.44434 10.513 4.44434C12.9003 4.44434 14.8423 6.43807 14.8423 8.88907C14.8423 11.3401 12.9003 13.3332 10.513 13.3332C8.12336 13.3332 6.18427 11.3424 6.18427 8.88907ZM13.8309 8.88907C13.8309 7.00454 12.3486 5.48267 10.513 5.48267C8.67796 5.48267 7.19563 7.00513 7.19563 8.88907C7.19563 10.7707 8.68024 12.2949 10.513 12.2949C12.348 12.2949 13.8309 10.7736 13.8309 8.88907Z"
+                                    fill="black" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_0_192">
+                                    <rect width="20" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </span>
+                    <span class="header__inner__link-geo-label">Showrooms</span>
+                </a>
+                <a href="/" class="header__inner__link-basket">
+                    <span class="header__inner__link-basket-icon">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.010376 0.729589C0.010376 1.13231 0.279912 1.45918 0.611998 1.45918H2.71255C3.47738 1.45918 4.11995 2.01361 4.36104 2.8956L7.54429 14.4759L5.73317 19.9671C5.57169 20.4546 5.87192 20.956 6.28987 20.9678H19.5375C19.8695 20.9678 20.1391 20.6409 20.1391 20.2381C20.1391 19.8354 19.8695 19.5086 19.5375 19.5086H7.17638L8.58775 15.2296H19.5375C19.8037 15.2296 20.0293 15.02 20.109 14.7297L23.8705 4.4658C24.0502 3.97274 23.7482 3.46037 23.3229 3.44245H5.77412L5.49833 2.43909C5.09459 0.966809 3.992 0 2.71255 0H0.611998C0.279912 0 0.010376 0.326866 0.010376 0.729589ZM8.61334 13.7705L6.17501 4.90162H22.4001L19.1496 13.7705H8.61334Z"
+                                fill="#1A1A1A" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M7.5268 21.7744C8.28172 21.7744 8.89326 22.4968 8.89326 23.3877C8.89326 24.2778 8.28172 25.0002 7.5268 25.0002C6.77188 25.0002 6.16034 24.2778 6.16034 23.3877C6.16034 22.4968 6.77188 21.7744 7.5268 21.7744Z"
+                                fill="#1A1A1A" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M18.4585 21.7744C19.2133 21.7744 19.8249 22.4968 19.8249 23.3877C19.8249 24.2778 19.2133 25.0002 18.4585 25.0002C17.7036 25.0002 17.092 24.2778 17.092 23.3877C17.092 22.4968 17.7036 21.7744 18.4585 21.7744Z"
+                                fill="#1A1A1A" />
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="content">
+        <section class="section container-desing-space">
+            <div class="desing_space">
+                <div class="desing_space__image">
+                    <img src="./images/desing-space-bg.jpg" alt="Design space" loading="lazy" width="1327" height="746"
+                        class="desing_space__image-bg">
+                </div>
+                <div class="desing_space__paragraph container">
+                    <h1 class="desing_space__paragraph-title h2">
+                        Design that<br>
+                        inspires a better<br>
+                        way to work.
+                    </h1>
+                    <div class="desing_space__paragraph-description">
+                        <p>
+                            We've developed a series of purpose-built rooms that offer companies looking for change an
+                            affordable, sustainable, and flexible alternative to fixed construction and traditional
+                            office design.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="room">
+                <h2 class="visually-hidden">
+                    Special rooms for companies.
+                </h2>
+                <ul class="room__list grid grid--2">
+                    <li class="room__item">
+                        <article class="room-card">
+                            <img src="./images/room/1.jpg" alt="" class="room-image" width="588" height="412"
+                                loading="lazy">
+                            <h3 class="room-cart__title">Phone Booth</h3>
+                        </article>
+                    </li>
+                    <li class="room__item">
+                        <article class="room-card">
+                            <img src="./images/room/2.jpg" alt="" class="room-image" width="588" height="412"
+                                loading="lazy">
+                            <h3 class="room-cart__title">Focus Room</h3>
+                        </article>
+                    </li>
+                    <li class="room__item">
+                        <article class="room-card">
+                            <img src="./images/room/3.jpg" alt="" class="room-image" width="588" height="412"
+                                loading="lazy">
+                            <h3 class="room-cart__title">Meeting Room</h3>
+                        </article>
+                    </li>
+                    <li class="room__item">
+                        <article class="room-card">
+                            <img src="./images/room/4.jpg" alt="" class="room-image" width="588" height="412"
+                                loading="lazy">
+                            <h3 class="room-cart__title">Open Meeting Room</h3>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="container-small">
+            <div class="brands">
+                <header class="brands__header">
+                    <h2 class="brands__header-title">
+                        The world's leading brands choose ROOM.
+                    </h2>
+                    <p class="brands__header-description">
+                        Over 3,000 and counting.
+                    </p>
+                </header>
+                <ul class="brands__list grid grid--6">
+                    <li class="brands__item">
+                        <img src="./images/brands/nike.jpg" alt="Nike" class="brands__item-image" width="92" height="60"
+                            loading="lazy">
+                    </li>
+                    <li class="brands__item">
+                        <img src="./images/brands/nasa.jpg" alt="Nasa" class="brands__item-image" width="99" height="60"
+                            loading="lazy">
+                    </li>
+                    <li class="brands__item">
+                        <img src="./images/brands/google.jpg" alt="Google" class="brands__item-image" width="119"
+                            height="60" loading="lazy">
+                    </li>
+                    <li class="brands__item">
+                        <img src="./images/brands/uber.jpg" alt="Uber" class="brands__item-image" width="98" height="60"
+                            loading="lazy">
+                    </li>
+                    <li class="brands__item">
+                        <img src="./images/brands/walmart.jpg" alt="Walmart" class="brands__item-image" width="145"
+                            height="60" loading="lazy">
+                    </li>
+                    <li class="brands__item">
+                        <img src="./images/brands/salesforce.jpg" alt="Salesforce" class="brands__item-image"
+                            width="106" height="60" loading="lazy">
+                    </li>
+                    <li class="brands__item">
+                        <img src="./images/brands/hulu.jpg" alt="Hulu" class="brands__item-image" width="99" height="60"
+                            loading="lazy">
+                    </li>
+                    <li class="brands__item">
+                        <img src="./images/brands/reddit.jpg" alt="Reddit" class="brands__item-image" width="141"
+                            height="60" loading="lazy">
+                    </li>
+                    <li class="brands__item">
+                        <img src="./images/brands/knotel.jpg" alt="Knotel" class="brands__item-image" width="146"
+                            height="60" loading="lazy">
+                    </li>
+                    <li class="brands__item">
+                        <img src="./images/brands/samsung.jpg" alt="Samsung" class="brands__item-image" width="119"
+                            height="60" loading="lazy">
+                    </li>
+                    <li class="brands__item">
+                        <img src="./images/brands/amazon.jpg" alt="Amazon" class="brands__item-image" width="145"
+                            height="60" loading="lazy">
+                    </li>
+                    <li class="brands__item">
+                        <img src="./images/brands/angellist.jpg" alt="AngelList" class="brands__item-image" width="151"
+                            height="60" loading="lazy">
+                    </li>
+                    <li class="brands__item">
+                        <img src="./images/brands/buzzfeed.jpg" alt="BuzzFeed" class="brands__item-image" width="102"
+                            height="60" loading="lazy">
+                    </li>
+                    <li class="brands__item">
+                        <img src="./images/brands/apple.jpg" alt="Apple" class="brands__item-image" width="99"
+                            height="60" loading="lazy">
+                    </li>
+                    <li class="brands__item">
+                        <img src="./images/brands/harrys.jpg" alt="Harry's" class="brands__item-image" width="132"
+                            height="60" loading="lazy">
+                    </li>
+                    <li class="brands__item">
+                        <img src="./images/brands/asana.jpg" alt="Asana" class="brands__item-image" width="98"
+                            height="60" loading="lazy">
+                    </li>
+                    <li class="brands__item">
+                        <img src="./images/brands/jpmorgan.jpg" alt="J.P.Morgan" class="brands__item-image" width="161"
+                            height="60" loading="lazy">
+                    </li>
+                    <li class="brands__item">
+                        <img src="./images/brands/greenpeace.jpg" alt="Greenpeace" class="brands__item-image"
+                            width="161" height="60" loading="lazy">
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section container-avarage">
+            <div class="section__body">
+                <div class="workspace">
+                    <div class="workspace__slider">
+                        <img src="./images/workspace.jpg" alt="A secluded workspace created by designers" width="1344"
+                            height="700" loading="lazy" />
+                        <button class="workspace__slider-button-left" type="button">
+                            <span class="visually-hidden">Previous slide</span>
+                            <svg width="23" height="42" viewBox="0 0 23 42" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M17.7988 0H23L5.58089 21L23 42H17.7988L0 21L17.7988 0Z" fill="white" />
+                            </svg>
+                        </button>
+                        <button class="workspace__slider-button-right" type="button">
+                            <span class="visually-hidden">Next slide</span>
+                            <svg width="23" height="42" viewBox="0 0 23 42" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.20123 0H0L17.4191 21L0 42H5.20123L23 21L5.20123 0Z" fill="white" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="workplace__padination padination">
+                        <ul class="padination__list">
+                            <li class="padination__item">
+                                <button class="padination__button is-current">
+                                    <span class="visually-hidden">First slide</span>
+                                    <div class="padination__button-bg"></div>
+                                </button>
+                            </li>
+                            <li class="padination__item">
+                                <button class="padination__button">
+                                    <span class="visually-hidden">Second slide</span>
+                                    <div class="padination__button-bg"></div>
+                                </button>
+                            </li>
+                            <li class="padination__item">
+                                <button class="padination__button">
+                                    <span class="visually-hidden">Third slide</span>
+                                    <div class="padination__button-bg"></div>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container-small">
+            <div class="working-environment">
+                <header class="working-environment__header">
+                    <h2 class="working-environment__header-title">
+                        Our simple and seamless modular products allow teams to shape and then reshape their work
+                        environment with ease.
+                    </h2>
+                    <a href="/" class="working-environment__header-link">GET IN TOUCH</a>
+                </header>
+                <div class="working-environment__body">
+                    <ul class="working-environment__list grid grid--3">
+                        <li class="working-environment__item">
+                            <div class="working-environment__card">
+                                <img src="./images/working_environment/1.jpg" alt=""
+                                    class="working-environment__card-image" width="162" height="121" loading="lazy" />
+                            </div>
+                            <div class="working-environment__info">
+                                <h3 class="working-environment-title">
+                                    Cost-effective
+                                </h3>
+                                <p class="working-environment-post">
+                                    At a fraction of the cost of traditional construction, our pre-fab solutions create
+                                    additional space for focused work and collaboration without constant noise, debris
+                                    and distraction.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="working-environment__item">
+                            <div class="working-environment__card">
+                                <img src="./images/working_environment/2.jpg" alt=""
+                                    class="working-environment__card-image" width="162" height="121" loading="lazy" />
+                            </div>
+                            <div class="working-environment__info">
+                                <h3 class="working-environment-title">
+                                    Time Saving
+                                </h3>
+                                <p class="working-environment-post">
+                                    Thoughtful design ensures simple installation in a few hours or less. And, because
+                                    our products are safety ensured, you'll never have to spend time or money chasing
+                                    after permits, contractors, and more.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="working-environment__item">
+                            <div class="working-environment__card">
+                                <img src="./images/working_environment/3.jpg" alt=""
+                                    class="working-environment__card-image" width="162" height="121" loading="lazy" />
+                            </div>
+                            <div class="working-environment__info">
+                                <h3 class="working-environment-title">
+                                    Flexible
+                                </h3>
+                                <p class="working-environment-post">
+                                    Unlike traditional construction, our purpose-built products were designed to adapt
+                                    with your workspace and can easily be positioned in various places throughout your
+                                    office, or to an entirely new location.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section container-rewiews">
+            <div class="section__body">
+                <div class="reviews">
+                    <img src="./images/Reviews.jpg" alt="Reviews" class="reviws__image" width="1296" height="800"
+                        loading="lazy" />
+                </div>
+            </div>
+        </section>
+
+        <section class="section container">
+            <h2 class="visually-hidden">A humane approach</h2>
+            <div class="humane-approach">
+                <header class="humane-approach__header">
+                    <p class="humane-approach__header--paragraph">
+                        We take a human approach to a business-to-business industry, breaking the boundaries between
+                        corporate and personal, and rethinking every step of the user experience along the way.
+                    </p>
+                    <p class="humane-approach__header--sub-paragraph">
+                        We make work, work for you.
+                    </p>
+                </header>
+                <div class="humane-approach__body">
+                    <ul class="humane-approach__body--list">
+                        <li class="humane-approach__body--item">
+                            <div class="humane-approach__body--item__image">
+                                <img src="./images/humane-approach/1.jpg" alt="The girls are talking at the workplace"
+                                    width="671" height="672" loading="lazy" class="">
+                            </div>
+                            <div class="humane-approach__body--item__text">
+                                <h3 class="humane-approach__body--item__text--title">
+                                    We sell direct.
+                                </h3>
+                                <p class="humane-approach__body--item__text--discription">
+                                    We make extra room in the budget without compromising quality by selling direct. No
+                                    middle man, and no additional construction required.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="humane-approach__body--item reverse">
+                            <div class="humane-approach__body--item__image">
+                                <img src="./images/humane-approach/2.jpg"
+                                    alt="The workplace is well equipped with places to connect and recharge other devices."
+                                    width="671" height="672" loading="lazy">
+                            </div>
+                            <div class="humane-approach__body--item__text">
+                                <h3 class="humane-approach__body--item__text--title">
+                                    We build with purpose.
+                                </h3>
+                                <p class="humane-approach__body--item__text--discription">
+                                    We’re not just building another room with four walls, we’re building a more
+                                    productive workspace. We design with you in mind, looking at every detail as an
+                                    opportunity to enable a better working environment for everyone.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="humane-approach__body--item">
+                            <div class="humane-approach__body--item__image">
+                                <img src="./images/humane-approach/3.jpg"
+                                    alt="They pass a bottle of water from hand to hand." width="671" height="672"
+                                    loading="lazy">
+                            </div>
+                            <div class="humane-approach__body--item__text">
+                                <h3 class="humane-approach__body--item__text--title">
+                                    We design sustainably.
+                                </h3>
+                                <p class="humane-approach__body--item__text--discription">
+                                    From design to delivery, we strive to lessen our impact on the environment. Our
+                                    products are engineered with recycled materials and replace multiple cycles of
+                                    construction, minimizing noise and our footprint.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container-avarage">
+            <div class="section__body">
+                <div class="office">
+                    <img src="./images/office.jpg"
+                        alt="An office with ergonomic and comfortable workplaces created by designers."
+                        class="office__image" width="1344" height="700" loading="lazy" />
+                </div>
+            </div>
+        </section>
+
+        <section class="section container">
+            <div class="trial-version">
+                <h2 class="trial-version__title">
+                    100 day risk-free trial
+                </h2>
+                <div class="trial-version__card">
+                    <ul class="trial-version__list grid grid--3">
+                        <li class="trial-version__item">
+
+                            <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M44.1391 27.9452L46.2043 31.6111L47.2219 31.0138L45.1369 27.3124L46.4642 27.6631L46.7581 26.5033L43.511 25.6445L42.668 28.966L43.8041 29.2662L44.1391 27.9452Z"
+                                    fill="#AAAAAA" />
+                                <path
+                                    d="M39.3925 30.7753L41.4577 34.4411L42.4753 33.8439L40.3895 30.1424L41.7168 30.4932L42.0115 29.3334L38.7636 28.4746L37.9214 31.796L39.0575 32.0962L39.3925 30.7753Z"
+                                    fill="#AAAAAA" />
+                                <path
+                                    d="M41.6575 37.5101L49.9334 32.5627L49.34 31.5293L41.0649 36.4759L41.6575 37.5101Z"
+                                    fill="#AAAAAA" />
+                                <path
+                                    d="M44.5129 43.4924L58.6764 34.7852L39.3451 2L20.8838 13.35L38.2888 42.8691C34.1394 43.9791 31.2257 48.0021 31.5765 52.5181C31.951 57.3406 35.9147 61.012 40.5737 61.012C40.8123 61.012 41.0533 61.0026 41.2958 60.9828C46.2606 60.5799 49.9794 56.1279 49.5851 51.0589C49.3236 47.6821 47.3011 44.875 44.5129 43.4924ZM38.6783 4.74151L55.9917 34.1041L42.0298 42.6874C41.4973 42.5989 40.9513 42.557 40.3951 42.5689L23.5684 14.0311L38.6783 4.74151ZM41.141 58.9919C37.2491 59.3095 33.8353 56.3325 33.5263 52.3601C33.2174 48.3885 36.1312 44.9003 40.0206 44.5851C40.2118 44.5693 40.403 44.5614 40.5927 44.5614C42.2723 44.5614 43.8809 45.165 45.1734 46.2908C46.6113 47.5431 47.4859 49.2931 47.6353 51.2169C47.9442 55.1885 45.0312 58.6758 41.141 58.9919Z"
+                                    fill="#AAAAAA" />
+                                <path
+                                    d="M40.4283 49.8269C39.3689 49.913 38.5756 50.8627 38.6594 51.9443C38.7392 52.9729 39.5853 53.7567 40.58 53.7567C40.6306 53.7567 40.6819 53.7551 40.7333 53.7503C41.7928 53.6642 42.586 52.7146 42.5022 51.633C42.4185 50.5514 41.4839 49.7384 40.4283 49.8269ZM40.6409 52.5566C40.23 52.5937 39.8626 52.2729 39.8295 51.8495C39.7963 51.4268 40.1068 51.0554 40.5216 51.0215C40.5413 51.0199 40.5619 51.0191 40.5816 51.0191C40.9703 51.0191 41.3013 51.3256 41.333 51.7286C41.3653 52.1513 41.0549 52.5226 40.6409 52.5566Z"
+                                    fill="#AAAAAA" />
+                                <path
+                                    d="M33.7184 43.5567L34.3457 43.0107L13.0188 6.35109C11.9672 4.54422 10.1145 3.38047 8.06192 3.23668L3.13431 2.89062L3 4.88317L7.9284 5.22921C9.34024 5.32797 10.6146 6.12909 11.3375 7.37185L31.8372 42.6086C29.1803 45.2537 27.785 49.0026 28.0805 52.8012L30.0304 52.6432C29.7618 49.1985 31.1412 45.802 33.7184 43.5567Z"
+                                    fill="#AAAAAA" />
+                                <path
+                                    d="M60.4486 37.9316L49.1333 44.8257L50.2686 46.4595L61.4504 39.6469L60.4486 37.9316Z"
+                                    fill="#AAAAAA" />
+                            </svg>
+
+
+                            <h3 class="trial-version__subtitle">
+                                FREE SHIPPING
+                            </h3>
+
+                        </li>
+                        <li class="trial-version__item">
+                            <svg width="64" height="51" viewBox="0 0 64 51" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_0_387)">
+                                    <path
+                                        d="M63.8504 26.8125C63.8557 26.0136 63.4571 25.2913 62.7827 24.8799L62.3756 24.6315C63.0655 22.6784 64.4701 15.9868 55.4983 7.83458C50.6864 3.46142 43.3661 0.828814 34.888 0.421631C27.2206 0.0503009 19.2746 1.51001 13.0761 4.41748C5.33415 8.04884 0.329389 14.0046 0.015735 19.9604C-0.182228 23.7224 1.39548 29.3085 10.0356 34.5652C15.0703 37.628 20.9998 38.7762 26.631 38.7762C30.358 38.7762 33.9522 38.2734 37.0681 37.4897L37.0664 38.1385L33.2854 40.3306C32.185 40.9769 31.3255 42.4904 31.3298 43.7768C31.3315 44.5049 31.6169 45.0888 32.1105 45.3774C32.3282 45.5045 32.5732 45.5677 32.8338 45.5677C33.1681 45.5677 33.5254 45.4636 33.8759 45.2569L37.1872 43.3372C37.2781 43.6009 37.4135 43.845 37.5892 44.0602C36.8959 44.8174 36.422 45.8963 36.4246 46.8507C36.4262 47.5788 36.7116 48.1619 37.2053 48.4513C37.4229 48.5793 37.668 48.6417 37.9286 48.6417C38.2627 48.6417 38.6193 48.5375 38.9706 48.3317L41.7198 46.738L47.5627 50.2986C47.9312 50.5239 48.3383 50.6366 48.7462 50.6366C49.1336 50.6366 49.5217 50.5349 49.8783 50.3302C49.9811 50.2712 50.0763 50.2037 50.167 50.132L62.1057 42.1498C63.1872 41.495 63.8548 40.2974 63.8513 39.0169L63.8136 27.1975C63.8342 27.0712 63.8496 26.944 63.8504 26.8125ZM50.0797 33.8977C49.8877 33.7031 49.6743 33.528 49.4369 33.3838L41.3076 28.4311L51.8151 22.1141C52.6454 21.6199 53.6747 21.625 54.4999 22.1295L61.7843 26.5735C61.888 26.6366 61.9094 26.7306 61.9086 26.7989C61.9086 26.8671 61.8854 26.9602 61.7834 27.0208L50.0797 33.8977ZM11.0322 32.869C4.85082 29.1088 1.71255 24.681 1.95508 20.0654C2.22932 14.8429 6.80302 9.53502 13.8894 6.21096C25.6463 0.697356 44.6507 0.625649 54.2051 9.3071C61.816 16.2232 61.2066 21.6976 60.6702 23.5901L55.4992 20.435C54.6337 19.9066 53.6396 19.6992 52.6694 19.8025C50.8878 14.3247 44.5076 8.54566 33.9925 7.68775C30.3135 7.38727 26.3816 7.7219 22.3067 8.68138C19.1161 9.43258 17.3738 10.322 15.4413 11.6034L16.5024 13.2577C18.2943 12.0695 19.8197 11.2944 22.7445 10.6055C26.6241 9.69208 30.3554 9.37283 33.8373 9.65708C43.4612 10.4416 49.2493 15.5693 50.8227 20.4145L38.4007 27.8821C38.3527 27.9052 38.3048 27.9257 38.2576 27.9521C37.5274 28.3712 37.0904 29.131 37.0878 29.9838L37.0732 35.4496C29.6073 37.4334 19.0638 37.7544 11.0322 32.869ZM33.2949 44.2283C33.0455 44.3743 32.8141 44.4204 32.6907 44.3487C32.5698 44.2778 32.4945 44.0568 32.4936 43.7717C32.491 42.9001 33.12 41.793 33.8639 41.3567L40.9931 37.2242L41 39.7613L33.2949 44.2283ZM38.3896 47.304C38.1403 47.4499 37.908 47.496 37.7854 47.4243C37.6646 47.3535 37.5892 47.1324 37.5883 46.8481C37.5857 45.9766 38.2148 44.8694 38.9587 44.4332L46.0879 40.2999L46.0947 42.8369L38.3896 47.304ZM43.6558 45.6155L46.9679 43.6957C47.1497 43.5898 47.2627 43.3926 47.2619 43.1793L47.2516 39.2798C47.2508 39.069 47.1402 38.8744 46.9611 38.7686C46.782 38.6626 46.5609 38.6618 46.3801 38.7668L39.2243 42.9154L39.1703 42.883C39.0624 42.8173 38.9955 42.6969 38.9955 42.5655V42.2897L41.8732 40.6217C42.0549 40.5159 42.168 40.3187 42.1671 40.1053L42.1569 36.2059C42.156 35.995 42.0454 35.8005 41.8663 35.6945C41.6872 35.5887 41.4662 35.5879 41.2853 35.6929L39.0109 37.0109L39.0298 29.9915C39.0298 29.8062 39.1446 29.7132 39.2123 29.6739C39.28 29.6347 39.4171 29.5835 39.5748 29.6791L48.4377 35.0782C48.8713 35.3429 49.1396 35.8269 49.1387 36.3408L49.1052 48.2916C49.1052 48.4154 49.0538 48.4949 48.9999 48.5477L48.8756 48.6305C48.8011 48.6613 48.688 48.6818 48.5602 48.6041L43.6558 45.6155ZM61.1004 40.4578L51.0515 47.1759L51.0815 36.3459C51.0823 36.1043 51.0515 35.8678 51.0035 35.6366L61.8769 29.2479L61.9077 39.022C61.9094 39.611 61.6 40.1608 61.1004 40.4578Z"
+                                        fill="#AAAAAA" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_0_387">
+                                        <rect width="64" height="51" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <h3 class="trial-version__subtitle">
+                                PLUG & PLAY
+                            </h3>
+                        </li>
+                        <li class="trial-version__item">
+                            <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M47.8541 26.3236L41.1361 26.3227L5.07482 26.32C3.3545 26.32 1.95455 24.8905 1.95455 23.1334C1.95455 21.3762 3.3545 19.9467 5.07572 19.9467L45.5837 19.9494V17.9553L5.07572 17.9526C2.27851 17.9526 0.0026926 20.276 0.00179519 23.1325L0 58.8151C0 60.3927 1.25637 61.676 2.8017 61.676L47.8532 61.6796C49.3985 61.6796 50.6549 60.3963 50.6549 58.8196L50.6567 38.024L50.6576 29.1837C50.6558 27.6069 49.3994 26.3236 47.8541 26.3236ZM48.7013 58.8196C48.7013 59.297 48.3199 59.6865 47.8523 59.6865L2.8008 59.6829C2.33325 59.6829 1.95186 59.2934 1.95186 58.816L1.95365 27.2085C2.58363 27.7128 3.33117 28.0673 4.1478 28.2225V28.3132H5.07393L41.1352 28.3159L47.8532 28.3168C48.3217 28.3168 48.7022 28.7062 48.7022 29.1837L48.7013 38.024V58.8196Z"
+                                    fill="#AAAAAA" />
+                                <path d="M47.6817 22.1577H6.50693V23.3539H47.6817V22.1577Z" fill="#AAAAAA" />
+                                <path
+                                    d="M59.1445 8.37426C53.0143 2.11397 43.247 1.78372 36.7282 7.37635L37.3752 2.25486L35.4386 2L34.3483 10.6357L42.8054 11.7485L43.0549 9.77152L37.7845 9.07783C43.535 3.96352 52.2919 4.19595 57.7643 9.78409C63.4771 15.619 63.4762 25.1118 57.7625 30.9458L59.1427 32.3556C65.6183 25.7444 65.6192 14.9863 59.1445 8.37426Z"
+                                    fill="#AAAAAA" />
+                            </svg>
+                            <h3 class="trial-version__subtitle">
+                                FREE RETURNS
+                            </h3>
+                        </li>
+                    </ul>
+                </div>
+                <div class="trial-version__footer">
+                    <a href="/" class="trial-version__footer__link">GET A ROOM</a>
+                    <a href="/" class="trial-version__footer__subcription">Terms & Conditions apply</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__main">
+            <div class="footer__body container grid__5">
+                <div class="footer__column">
+                    <a href="/" class="footer__column__logo logo">
+                        <img src="./images/footer-logo.svg" alt="Room" class="footer__column__logo__image"
+                            loading="lazy" width="87" height="87" />
+                    </a>
+                </div>
+                <div class="footer__column">
+                    <div class="footer__column__about">
+                        <h2 class="footer__column__about--title">
+                            About
+                        </h2>
+                        <ul class="footer__column__about--list">
+                            <li class="footer__column__about--item">
+                                <a href="/" class="footer__column__about--link">Compare</a>
+                            </li>
+                            <li class="footer__column__about--item">
+                                <a href="/" class="footer__column__about--link">Reviews</a>
+                            </li>
+                            <li class="footer__column__about--item">
+                                <a href="/" class="footer__column__about--link">Risk-Free Trial</a>
+                            </li>
+                            <li class="footer__column__about--item">
+                                <a href="/" class="footer__column__about--link">Careers</a>
+                            </li>
+                            <li class="footer__column__about--item">
+                                <a href="/" class="footer__column__about--link">Press</a>
+                            </li>
+                            <li class="footer__column__about--item">
+                                <a href="/" class="footer__column__about--link">Podcast</a>
+                            </li>
+                            <li class="footer__column__about--item">
+                               <a href="/" class="footer__column__about--link">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__column__showrooms">
+                        <h2 class="footer__column__showrooms--title">
+                            Showrooms
+                        </h2>
+                        <ul class="footer__column__showrooms--list">
+                            <li class="footer__column__showrooms--item">
+                                <a href="/" class="footer__column__showrooms--link">New York</a>
+                            </li>
+                            <li class="footer__column__showrooms--item">
+                                <a href="/" class="footer__column__showrooms--link">London</a>
+                            </li>
+                            <li class="footer__column__showrooms--item">
+                                <a href="/" class="footer__column__showrooms--link">San Francisco</a>
+                            </li>
+                            <li class="footer__column__showrooms--item">
+                                <a href="/" class="footer__column__showrooms--link">Paris</a>
+                            </li>
+                            <li class="footer__column__showrooms--item">
+                                <a href="/" class="footer__column__showrooms--link">Copenhagen</a>
+                            </li>
+                            <li class="footer__column__showrooms--item">
+                                <a href="/" class="footer__column__showrooms--link">Zürich</a>
+                            </li>
+                            <li class="footer__column__showrooms--item">
+                                <a href="/" class="footer__column__showrooms--link">Los Angeles</a>
+                            </li>
+                            <li class="footer__column__showrooms--item">
+                                <a href="/" class="footer__column__showrooms--link">Berlin</a>
+                            </li>
+                            <li class="footer__column__showrooms--item">
+                                <a href="/" class="footer__column__showrooms--link">Belgium</a>
+                            </li>
+                            <li class="footer__column__showrooms--item">
+                                <a href="/" class="footer__column__showrooms--link">Virtual Demo</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__column">
+                    <div class="footer__column__support">
+                        <h2 class="footer__column__support--title">
+                            Support
+                        </h2>
+                        <ul class="footer__column__support--list">
+                            <li class="footer__column__support--item">
+                                <a href="/" class="footer__column__support--link">FAQ</a>
+                            </li>
+                            <li class="footer__column__support--item">
+                                <a href="/" class="footer__column__support--link">Booth Assembly</a>
+                            </li>
+                            <li class="footer__column__support--item">
+                                <a href="/" class="footer__column__support--link">Delivery</a>
+                            </li>
+                            <li class="footer__column__support--item">
+                                <a href="/" class="footer__column__support--link">Room Service</a>
+                            </li>
+                            <li class="footer__column__support--item">
+                                <a href="/" class="footer__column__support--link">Warranty</a>
+                            </li>
+                            <li class="footer__column__support--item">
+                                <a href="/" class="footer__column__support--link">Terms of Use</a>
+                            </li>
+                            <li class="footer__column__support--item">
+                                <a href="/" class="footer__column__support--link">Privacy Policy</a>
+                            </li>
+                            <li class="footer__column__support--item">
+                                <a href="/" class="footer__column__support--link">Copyright</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__column__office">
+                        <h2 class="footer__column__office--title">
+                            Office
+                        </h2>
+                        <address class="footer__column__office--address">
+                            599 Broadway, FL 9<br>
+                            New York, NY 10012
+                        </address>
+                    </div>
+                </div>
+                <div class="footer__column">
+                    <div class="footer__column__follow">
+                        <h2 class="footer__column__follow--title">
+                            Follow us
+                        </h2>
+                        <ul class="footer__column__follow--list">
+                            <li class="footer__column__follow--item">
+                                <a href="/" class="footer__column__follow--link" target="_blank">
+                                    <img src="./images/icons/footer/facebook.svg" alt="Facebook">
+                                </a>
+                            </li>
+                            <li class="footer__column__follow--item">
+                                <a href="/" class="footer__column__follow--link" target="_blank">
+                                    <img src="./images/icons/footer/instagram.svg" alt="Instagram">
+                                </a>
+                            </li>
+                            <li class="footer__column__follow--item">
+                                <a href="/" class="footer__column__follow--link" target="_blank">
+                                    <img src="./images/icons/footer/linkedin.svg" alt="LinkeDin">
+                                </a>
+                            </li>
+                            <li class="footer__column__follow--item">
+                                <a href="/" class="footer__column__follow--link" target="_blank">
+                                    <img src="./images/icons/footer/pinterest.svg" alt="Pinterest">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__column">
+                    <h2 class="visually-hidden">Subscribe to the newsletter.</h2>
+                    <div class="footer__column__subscription">
+                        <h3 class="footer__column__subscription--title">
+                            Join our mailing list
+                        </h3>
+                        <p class="footer__column__subscription--paragraf">
+                            Be the first to hear everything about ROOM.
+                        </p>
+                        <form class="footer__column__subscription--form">
+                            <label class="visually-hidden" for="subscribe-email">
+                                Email
+                            </label>
+                            <input type="email" class="footer__column__subscription--input input" id="subscribe-email"
+                            />
+                            <p class="footer__column__subscription--country">
+                                United States
+                            </p>
+                            <label class="checkbox">
+                                <input 
+                                    type="checkbox" 
+                                    class="checkbox-control visually-hidden"
+                                    id="checkbox-1" 
+                                />
+                                <span class="checkbox-emulator"></span>
+                                <span class="checkbox-label">
+                                    Yes. I would like to receive marketing communications from ROOM about product
+                                    updates and special offers. Please refer to ROOM’s Privacy Policy for more
+                                    information about how we process your data (including how to unsubscribe).
+                                </span>
+                            </label>
+                            <div class="footer__column__subscription--button">
+                            <button class="footer__column__subscription--button__btn" type="submit" title="Sign Up">
+                                Sign Up
+                            </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
