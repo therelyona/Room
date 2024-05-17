@@ -1,0 +1,33 @@
+.grid {
+    --griidColumns: 1;
+
+    display: grid;
+    grid-template-columns: repeat(var(--griidColumns), 1fr);
+    gap: 40px;
+
+    @for $i from 2 through 6 {
+        &--#{$i} {
+            --griidColumns: #{$i};
+        }
+    }
+
+    &--2 {
+        column-gap: 24px;
+        row-gap: 32px;
+    }
+
+    &--3 {
+        column-gap: 40px;
+    }
+
+    &--6 {
+        justify-items: center;
+        gap: 45px;
+    }
+}
+
+.grid__5 {
+    display: grid;
+    grid-template-columns: 87px 125px 125px 129px auto;
+    column-gap: 70px;
+}

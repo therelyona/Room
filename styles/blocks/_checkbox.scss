@@ -1,0 +1,32 @@
+.checkbox {
+    display: flex;
+    column-gap: 20px;
+    user-select: none;
+    margin-bottom: 60px;
+
+    &-control:not(:checked) + &-emulator::after {
+        display: none;
+    }
+
+    &-emulator {
+        display: inline-flex;
+        flex-shrink: 0;
+        justify-content: center;
+        align-items: center;
+        width: 28px;
+        height: 28px;
+        border: var(--border-input);
+        border-radius: var(--border-radius);
+
+        &::after {
+            content: '✓';
+            color: var(--color-light-transparent);
+        }
+    }
+
+    &-label {
+        font-size: 11px;
+        text-transform: uppercase;
+        color: var(--color-light-transparent);
+    }
+}

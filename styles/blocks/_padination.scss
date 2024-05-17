@@ -1,0 +1,23 @@
+.padination {
+    &__list {
+        display: flex;
+        justify-content: center;
+        column-gap: 12px;
+    }
+
+    &__button {
+        @include reset-button;
+        @include square(12px);
+
+        border-radius: 50%;
+        background-color: var(--color-light-gray);
+
+        &:hover {
+            background-color: var(--color-green);
+        }
+
+        &.is-current {
+            background-color: var(--color-green);
+        }
+    }
+}

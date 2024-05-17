@@ -1,0 +1,23 @@
+.desing_space {
+    &__image {
+        margin-bottom: 80px;
+    }
+
+    &__paragraph {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 136px;
+        margin-bottom: 120px;
+
+        &-title {
+            font-size: 48px;
+            color: var(--color-dark);
+        }
+
+        &-description {
+            width: 569px;
+            font-size: 24px;
+        }
+    }
+}

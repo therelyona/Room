@@ -1,0 +1,81 @@
+.header {
+    --container-width: 1440px;
+    --container-padding-x: 0;
+
+    font-size: 12px;
+    text-transform: uppercase;
+
+    &__contact {
+        height: 40px;
+        letter-spacing: 0.08em;
+        background-color: var(--color-light-alt);
+
+        &-list {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            column-gap: 25px;
+            padding-block: 13px;
+            padding-right: 50px;
+        }
+
+        &-country {
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 14px;
+                height: 7px;
+                translate: 40% 80%;
+                background: url('../../images/icons/arrow-bottom.svg');
+            }
+        }
+    }
+
+    &__inner {
+        border-bottom: 1px solid #e0e0e0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        padding-left: 120px;
+        padding-right: 30px;
+        color: var(--color-dark);
+
+        &__menu {
+            &-list {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                column-gap: 100px;
+            }
+
+            &-link:hover {
+                color: var(--color-green);
+            }
+        }
+
+        &__link {
+            display: flex;
+            column-gap: 45px;
+
+            &-geo {
+                display: flex;
+                align-items: center;
+
+                &:hover {
+                    color: var(--color-green);
+                }
+
+                &-label {
+                    margin-left: 5px;
+                }
+            }
+
+            &-basket:hover {
+                color: var(--color-green);
+            }
+        }
+    }
+}

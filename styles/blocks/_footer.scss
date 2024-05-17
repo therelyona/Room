@@ -1,0 +1,160 @@
+.footer {
+    padding-top: 97px;
+    padding-bottom: 57px;
+    background-color: var(--color-gray-brown);
+    color: var(--color-light);
+
+    &__body {
+        padding-inline: 55px;
+    }
+
+    &__column {
+        &__about {
+            margin-bottom: 47px;
+
+            &--title {
+                margin-bottom: 17px;
+                font-size: 14px;
+            }
+
+            &--list {
+                display: flex;
+                flex-direction: column;
+                row-gap: 4px;
+                font-size: 14px;
+            }
+
+            &--link {
+                &:hover {
+                    color: var(--color-green);
+                }
+            }
+        }
+
+        &__showrooms {
+            margin-bottom: 20px;
+
+            &--title {
+                margin-bottom: 17px;
+                font-size: 14px;
+            }
+
+            &--list {
+                display: flex;
+                flex-direction: column;
+                row-gap: 4px;
+                font-size: 14px;
+            }
+
+            &--link {
+                &:hover {
+                    color: var(--color-green);
+                }
+            }
+        }
+
+        &__support {
+            margin-bottom: 20px;
+
+            &--title {
+                margin-bottom: 17px;
+                font-size: 14px;
+            }
+
+            &--list {
+                display: flex;
+                flex-direction: column;
+                row-gap: 4px;
+                font-size: 14px;
+            }
+
+            &--link {
+                &:hover {
+                    color: var(--color-green);
+                }
+            }
+        }
+
+        &__office {
+            &--title {
+                margin-bottom: 17px;
+                font-size: 14px;
+            }
+
+            &--address {
+                font-style: normal;
+                font-size: 13px;
+            }
+        }
+
+        &__follow {
+            &--title {
+                margin-bottom: 17px;
+                font-size: 14px;
+            }
+
+            &--list {
+                display: flex;
+                column-gap: 13px;
+            }
+        }
+
+        &__subscription {
+            &--title {
+                margin-bottom: 17px;
+                font-size: 13px;
+            }
+
+            &--paragraf {
+                margin-bottom: 30px;
+                font-size: 14px;
+            }
+
+            &--input {
+                font-size: 22px;
+                margin-bottom: 16px;
+            }
+
+            &--country {
+                position: relative;
+                width: 300px;
+                text-align: end;
+                margin-bottom: 56px;
+                font-size: 14px;
+                color: var(--color-light-transparent);
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 14px;
+                    height: 7px;
+                    translate: 40% 80%;
+                    background: url(../../images/icons/arrow-bottom.svg);
+                }
+            }
+
+            &--button {
+                display: flex;
+                justify-content: end;
+
+                &__btn {
+                  @include reset-button;
+
+                width: 72px;
+                height: 60px;
+                font-size: 14px;
+                text-transform: uppercase;
+                letter-spacing: 0.16em;
+                color: var(--color-light);
+
+                cursor: pointer;
+
+                &:hover {
+                    color: var(--color-green);
+                }  
+                }
+            }
+        }
+    }
+
+}    

@@ -1,0 +1,35 @@
+.workspace {
+    
+    &__slider {
+        display: flex;
+        position: relative;
+        margin-bottom: 24px;
+        
+        
+        &-button-left {
+            @include reset-button;
+
+            position: absolute;
+            top: 47%;
+            left: 5%;
+            color: var(--color-light);
+
+            &:hover {
+                color: var(--color-green);
+            }
+        }
+
+        &-button-right {
+            @include reset-button;
+
+            position: absolute;
+            top: 47%;
+            right: 5%;
+            color: var(--color-light);
+
+            &:hover {
+                color: var(--color-green);
+            }
+        }
+    }
+}

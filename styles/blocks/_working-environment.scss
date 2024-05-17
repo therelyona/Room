@@ -1,0 +1,40 @@
+.working-environment {
+    margin-bottom: 260px;
+    
+    &__header {
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+        margin-bottom: 70px;
+
+        &-title {
+            color: var(--color-dark-alt);
+            font-size: 48px;
+        }
+
+        &-link {
+            font-size: 14px;
+            line-height: 86%;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: var(--color-green);
+        }
+    }
+
+    &__card {
+       display: flex;
+       justify-content: center;
+       padding-bottom: 26px;
+    }
+
+    &-title {
+        font-size: 24px;
+        line-height: 100%;
+        color: var(--color-dark-alt);
+        padding-bottom: 18px;
+    }
+
+    &-post {
+        line-height: 150%;
+    }
+}
